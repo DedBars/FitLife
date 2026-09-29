@@ -59,8 +59,6 @@ while True:  # узнаём рост пользователя и проверя�
 
 # 3. Логика расчетов (Функции как "черный ящик": используем арифметику)
 bmi = round(user_weight / (user_height ** 2), 1)  # рассчитываем ИМТ
-
-# Подсчет воды: вес * 30 мл
 water_l = round((user_weight * WATER_PER_KG) / ML_PER_LITER, 1)
 
 
