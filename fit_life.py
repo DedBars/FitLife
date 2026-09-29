@@ -59,12 +59,12 @@ while True:  # узнаём рост пользователя и проверя�
 
 # 3. Логика расчетов (Функции как "черный ящик": используем арифметику)
 bmi = round(user_weight / (user_height ** 2), 1)  # рассчитываем ИМТ
-water_l = round((user_weight * WATER_PER_KG) / ML_PER_LITER, 1)
+water_l = (user_weight * WATER_PER_KG) / ML_PER_LITER
 
 
 # 4. Вывод красивого результата
 print(
     f'Отчет для пользователя: {user_name} ({user_age} г.)\n'
     f'Ваш индекс массы тела: {bmi}\n'
-    f'Рекомендуемая норма воды: {water_l}л. в день')
+    f'Рекомендуемая норма воды: {water_l:.1f} л. в день')
 print("Расчёт окончен. Будьте здоровы! (^ ω ^)")
